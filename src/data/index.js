@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const DATA_URL = '/data.json';
+const DATA_URL = '/data.ashx';
 
 // Fetch NGO data at runtime from remote JSON
 export async function fetchNgoData() {

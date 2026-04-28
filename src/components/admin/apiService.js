@@ -8,7 +8,7 @@ export const apiService = {
    */
   async getData() {
     try {
-      const response = await fetch('/data.json');
+      const response = await fetch('/data.ashx');
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }

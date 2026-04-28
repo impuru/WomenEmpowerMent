@@ -8,7 +8,7 @@ function Services() {
 
   useEffect(() => { 
     fetchNgoData().then(data => {
-      setServices(data.services);
+      setServices(data.services||[]);
     }).catch(err => console.error(err)).finally(() => setLoading(false));
   }, []);
 
